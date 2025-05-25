@@ -4,6 +4,8 @@ COPY frontend/ .
 RUN npm install
 RUN npm run build
 
+#"""""
+#""""""
 FROM eclipse-temurin:17-jdk as build-backend
 WORKDIR /app/backend
 COPY backend/ .
